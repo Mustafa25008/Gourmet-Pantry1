@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Item - Gourmet Pantry</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/update.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gourmet Pantry</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="logout.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="update-item">
+                <h2>Update Item</h2>
+                <form id="updateItemForm">
+                    <div class="form-group">
+                        <label for="itemName">Item Name:</label>
+                        <input type="text" id="itemName" placeholder="Enter item name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemQuantity">New Quantity:</label>
+                        <input type="number" id="itemQuantity" placeholder="Enter new quantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="itemPrice">New Price:</label>
+                        <input type="number" id="itemPrice" placeholder="Enter new price" step="0.01" required>
+                    </div>
+                    <button type="submit">Update Item</button>
+                    <p id="responseMessage"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gourmet Pantry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/update.js"></script>
+</body>
+</html>

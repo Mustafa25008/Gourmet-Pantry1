@@ -1,0 +1,101 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap and be responsive */
+    justify-content: center;
+}
+
+.dashboard-item {
+    flex: 1 1 300px; /* Allows cards to grow and shrink, with a minimum width of 300px */
+    margin: 10px;
+}
+
+.dashboard-card {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c); /* Beautiful gradient background */
+    color: white;
+    width: 100%; /* Full width of its container */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.dashboard-card h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.dashboard-card p {
+    font-size: 1.1em;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
